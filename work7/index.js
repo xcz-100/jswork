@@ -6,7 +6,8 @@ function sort(method){
         logs = bubbleSort(origin)
     }else if(method=='insert'){
         logs = insertSort(origin)
-    }
+    }   
     showDiv = document.getElementById('Anim')
-    showDiv.innerHTML = logs
-}
+    showDiv.innerHTML = logs    
+    }
+
