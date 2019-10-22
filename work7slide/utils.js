@@ -1,3 +1,4 @@
+
 function bubbleSort(str) {
     let arr = str.split(',')
     let sortLog = []
@@ -22,7 +23,7 @@ function showLog(logValues, showElement) {
         value: [row, pos]
     } = logValues.next()
     for (const key in row) {
-        let color = pos.indexOf(Number(key)) > -1 ? 'color:green;' : ''
+        let color = pos.indexOf(Number(key)) > -1 ? 'color:blue;' : ''
         str += '<span style="font-size:' + row[key] * 20 + 'px;' +
             color + '">' + row[key] + '</span>'
     }
