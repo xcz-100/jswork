@@ -24,8 +24,11 @@ function monkey(){
 function stat(){
     let str =document.getElementById('str').value
     let obj = {}
-    var str ="q a e w e e z s e r a s r w e e w a"
-    var n=str.split(" ");
+    var str = 'qaeweezserasrweewa'
+    str.split('').reduce((res,cur)=>{
+        res[cur] ? res[cur] ++ :res[cur] =1
+        return res
+     },{}
 
 
 
