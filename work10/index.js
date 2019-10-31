@@ -24,7 +24,12 @@ function monkey(){
 function stat(){
     let str =document.getElementById('str').value
     let obj = {}
-      
+    let shuzu = str.split("")
+    shuzu = shuzu.sort()
+    for (let i = 0; i < str.length; ++i){
+        let linshi = shuzu[i]
+        obj[linshi] = (obj [linshi] + 1) || 1;
+    } 
 
 
 
