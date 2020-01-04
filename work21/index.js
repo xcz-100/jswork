@@ -5,9 +5,9 @@ $(function(){
     var width = 1420;
     var speed = 400;
     var firstimg = $('.hot li').first().clone();
-    $('.hot').append(firstimg).width($('hot li').length*width);
+    $('.hot').append(firstimg).width($('.hot li').length*width);
     timer = setInterval(imgChange, delay);
-    $('banner').hover(function(){
+    $('.banner').hover(function(){
         clearInterval(timer);
     },function(){
     timer = setInterval(imgChange,delay);
@@ -59,6 +59,8 @@ $(function(){
     function dotChange(){
         if (i==$('hot li').length -1) {
             $('.dot li').eq(0).addClass('on').siblings().removeClass('on');
+        }else {
+            $('.dot li').eq(i).addClass('on').siblings().removeClass('on');
         }
     }
-})
+});
